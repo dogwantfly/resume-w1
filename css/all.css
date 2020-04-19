@@ -81,11 +81,13 @@ ul {
   margin-bottom: 16px;
 }
 
-h1 {
+.name {
   font-size: 80px;
   line-height: 90px;
-  font-family: Andale Mono,sans-serif;
   margin-bottom: 24px;
+  border-bottom: 2px solid #000;
+  padding: 48px 0 24px 0;
+  font-family: 'Andale Mono', sans-serif;
 }
 
 .line {
@@ -98,18 +100,19 @@ h1 {
   margin-bottom: 48px;
 }
 
-.mb-layout-profile {
-  margin-bottom: 79px;
+.mb-layout-section {
+  margin-bottom: 72px;
 }
 
-h2 {
+.title {
   font-size: 32px;
   line-height: 45px;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   position: relative;
+  border-bottom: 1px solid #000;
 }
 
-span {
+.subtitle {
   color: #A00404;
   font-size: 24px;
   margin-left: 16px;
@@ -117,7 +120,7 @@ span {
   font-weight: 700;
 }
 
-ul {
+.list {
   line-height: 1.5;
   font-size: 24px;
   padding-left: 48px;
@@ -145,10 +148,6 @@ ul {
   height: 16px;
   border-radius: 50%;
   background: #96A9C4;
-}
-
-.education {
-  margin-bottom: 72px;
 }
 
 .mb-layout-li-lg {
@@ -196,25 +195,24 @@ ul {
           align-items: center;
 }
 
-.span-light {
+.subtitle-light {
   color: #fff;
 }
 
-.line-skill {
+.title-skill {
   width: 996px;
   margin: 0 auto;
+}
+
+.title-light {
   margin-bottom: 40px;
-  background: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .skill-list {
   text-align: left;
   position: relative;
   padding-left: 0;
-}
-
-.skill-list li {
-  margin-bottom: 16px;
 }
 
 .skill-list::before {
@@ -226,7 +224,11 @@ ul {
   left: -24px;
 }
 
-.line-experience {
+.mb-item {
+  margin-bottom: 16px;
+}
+
+.title-experience {
   margin-bottom: 22px;
 }
 
@@ -234,11 +236,11 @@ ul {
   position: relative;
 }
 
-.experience-list li {
+.experience-list .list-item {
   margin-bottom: 32px;
 }
 
-.experience-list p {
+.experience-list .experience-info {
   font-size: 20px;
   font-weight: 300;
 }
@@ -252,11 +254,15 @@ ul {
   left: 15px;
 }
 
-.experience-item p, .experience-item a {
+.experience-item {
+  font-weight: 500;
+}
+
+.mb-info {
   margin-bottom: 8px;
 }
 
-.experience-item a {
+.logo {
   display: block;
   width: 90px;
   height: 73px;
@@ -266,12 +272,12 @@ ul {
   cursor: pointer;
 }
 
-.experience-item .hexshool {
+.hexshool {
   background: url("../img/Group 1.svg") no-repeat;
   margin-top: 8px;
 }
 
-.experience-item .simtree {
+.simtree {
   background: url("../img/simtree.png") no-repeat;
 }
 
@@ -291,8 +297,8 @@ ul {
   padding: 24px 0 48px 0;
 }
 
-.contact li {
-  margin-bottom: 16px;
+.contact .works {
+  color: #fff;
 }
 
 .contact-icon {
@@ -304,7 +310,8 @@ ul {
           justify-content: center;
 }
 
-.contact-icon img {
+.contact-icon .icon {
+  display: block;
   margin: 0 12px;
 }
 /*# sourceMappingURL=all.css.map */
